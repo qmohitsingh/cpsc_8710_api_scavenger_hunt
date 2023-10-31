@@ -1,0 +1,11 @@
+{
+  "name": "cpsc_8710_api_scavenger_hunt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
