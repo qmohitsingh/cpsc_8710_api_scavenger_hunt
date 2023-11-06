@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Maps: New York City</title>
+    <script>
+        async function fetchApiKey() {
+            const response = await fetch('/api/maps-api-key');
+            const data = await response.json();
+            return data.apiKey;
+        }
+
+        async function initMap() {
+            const apiKey = await fetchApiKey();
+            const script = document.createElement('script');
+            script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=loadMap`;
+            script.defer = true;
+            document.head.appendChild(script);
+        }
+
+        function loadMap() {
+            var nyc = {lat: 40.7128, lng: -74.0060};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: nyc
+            });
+            var marker = new google.maps.Marker({
+                position: nyc,
+                map: map
+            });
+        }
+    </script>
+    <style>
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
+    </style>
+</head>
+<body onload="initMap()">
+<div id="map"></div>
+</body>
+</html>
