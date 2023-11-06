@@ -416,3 +416,18 @@ The Currency Converter API provides a straightforward solution to currency conve
 With easy-to-follow documentation and a simple request structure, the API facilitates real-time access to exchange rates and currency conversions. 
 This API is invaluable for financial services, e-commerce sites, and businesses with international markets. 
 Its ability to perform currency calculations rapidly and with up-to-date rates ensures that financial applications provide users with accurate and timely information.
+
+## Source Code
+
+The source code for this project is available on GitHub:
+
+- [GitHub Repository: cpsc_8710_api_scavenger_hunt](https://github.com/qmohitsingh/cpsc_8710_api_scavenger_hunt)
+
+Feel free to fork the repository, examine the code, and contribute to the development.
+
+## License
+
+This project is made available under the MIT License. This license allows for free use, modification, and distribution, both commercially and privately, with the only requirement being to include the original copyright and license notice in any copy of the project or substantial portions of it.
+
+For more details, see the [LICENSE](https://github.com/qmohitsingh/cpsc_8710_api_scavenger_hunt/blob/main/LICENSE) file in the repository.
+
