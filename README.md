@@ -429,5 +429,5 @@ Feel free to fork the repository, examine the code, and contribute to the develo
 
 This project is made available under the MIT License. This license allows for free use, modification, and distribution, both commercially and privately, with the only requirement being to include the original copyright and license notice in any copy of the project or substantial portions of it.
 
-For more details, see the [LICENSE](https://github.com/qmohitsingh/cpsc_8710_api_scavenger_hunt/blob/main/LICENSE) file in the repository.
+For more details, see the [LICENSE](https://github.com/qmohitsingh/cpsc_8710_api_scavenger_hunt/blob/main/LICENSE.md) file in the repository.
 
