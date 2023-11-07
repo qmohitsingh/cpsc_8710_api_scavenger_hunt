@@ -1,8 +1,8 @@
-# API Integration with Node.js and Express
+## API Integration with Node.js and Express
 
 In this project, we have created a web server using Node.js and the Express framework to explore and interact with various APIs. Node.js provides a robust and scalable environment for building server-side applications, and Express simplifies the routing and middleware integration, creating a seamless development experience.
 
-## Introduction
+### Introduction
 
 Our server is configured to handle various API integrations, providing endpoints that interact with external services to fetch and serve data. We have utilized popular libraries such as `axios` for making HTTP requests and `morgan` for logging HTTP requests details, enhancing the development and debugging process.
 
@@ -12,7 +12,7 @@ Our objective is to demonstrate how to integrate external APIs into a Node.js an
 
 Let's dive into the tasks and explore the world of APIs!
 
-# Integration of Diverse APIs
+### Integration of Diverse APIs
 
 This project explores the seamless integration of multiple APIs to deliver a suite of services including weather forecasting, currency exchange, comprehensive country data retrieval, and mapping functionalities.
 
@@ -23,6 +23,7 @@ This project explores the seamless integration of multiple APIs to deliver a sui
 We have two endpoints that provide weather information using the OpenWeatherMap API.
 
 ```javascript
+// Endpoint to get the current weather
 app.get('/currentWeather/:city/:country', async (req, res) => {
     try {
         const { city, country } = req.params;
@@ -45,8 +46,9 @@ app.get('/currentWeather/:city/:country', async (req, res) => {
         res.status(500).send('Error retrieving current weather');
     }
 });
-
-
+```
+```javascript
+// Endpoint to get the forecast detail for a specific city
 app.get('/forecast/:city/:country', async (req, res) => {
     try {
         const { city, country } = req.params;
@@ -73,7 +75,6 @@ app.get('/forecast/:city/:country', async (req, res) => {
         res.status(500).send('Error retrieving 5-day forecast');
     }
 });
-
 ```
 
 ### Results and Screenshots
@@ -89,7 +90,6 @@ Here's the result of retrieving the current weather data for London, United King
 And here is the 5-day weather forecast for Tokyo, Japan:
 
 ![5-Day Weather Forecast in Tokyo](img/forecast-tokyo-jp.png)
-
 
 ### Reflection:
 *Ease of Use:* The OpenWeather API is user-friendly, with comprehensive documentation and code examples in multiple programming languages. For instance, fetching the current weather in a city only requires a simple GET request with the city name and API key as query parameters. This simplicity encourages even novice developers to integrate weather data into their applications.
@@ -155,9 +155,7 @@ app.get('/continent/:continentName', async (req, res) => {
         res.status(500).send(`Error retrieving list of countries in ${continentName}`);
     }
 });
-
 ```
-
 ### Results and Screenshots
 
 #### Retrieve information about Brazil, including its population, area, and official language
@@ -375,6 +373,9 @@ app.get('/convert/usd-to-eur', async (req, res) => {
     }
 });
 
+```
+
+```javascript
 // Endpoint to convert an amount from JPY to GBP
 app.get('/convert/jpy-to-gbp', async (req, res) => {
     const amountJPY = req.query.amount;
